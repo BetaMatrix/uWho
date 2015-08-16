@@ -3,7 +3,11 @@
 
 #include <QMainWindow>
 #include <QtCore>
-#include <opencv2/objdetect/objdetect.hpp>
+#include <opencv2/core.hpp>
+#include <opencv2/opencv.hpp>
+
+using namespace cv;
+using namespace std;
 
 namespace Ui {
 class MainWindow;
@@ -16,6 +20,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    bool checkClassifier();
+    vector<Rect> faceFinder(Mat grayImage);
 
 private slots:
     void on_videofileButton_clicked();

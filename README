@@ -1,8 +1,20 @@
+Updates: 16 Aug 2015
+OpenCV version to 3.0.0, using Contrib and main branch. Uses newer OpeCV function calls, not well documented.
+Modularizing code so the subroutines can be changed easily
+Purging ugly rand() code still. Webcam subroutine is current.
+General cleaning
+
+Todo: 
+Clean up other subroutines
+Merge changes that modularize code
+General feature adds.
+
+
 Updates:
 
 Can open webcam for face processing.
 Can open video file for face processing.
-Can open directoyr of images for face processing.
+Can open directory of images for face processing.
 Cleaned up code some. Solved a few crashy areas.
 
 Todo:
